@@ -98,7 +98,6 @@ function pathIsValid(path, errorMessage) {
 
 function upload() {
 	logger.debug('path: ', path);
-	logger.debug('ext: ', ext);
 	var errorMessage = null;
 	if (!pathIsValid(path, errorMessage)) {
 		logger.error(errorMessage);
