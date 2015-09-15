@@ -3,9 +3,9 @@
 		"directory" : "./logs"
 	},
 	"oauthWrapRequest" : {
-		"url":"sts_url",
+		"url":"root_url",
 		"creds":{"uid":"userid", "pwd":"password"},
-		"wrapScope":"wrap_scope"
+		"wrapScope":"scope"
 	},
 	"filesApi" : {
 		"rootUrl" : "root_url"
