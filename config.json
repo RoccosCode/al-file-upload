@@ -1,0 +1,14 @@
+{
+	"logging" : {
+		"directory" : "./logs"
+	},
+	"oauthWrapRequest" : {
+		"url":"sts_url",
+		"creds":{"uid":"userid", "pwd":"password"},
+		"wrapScope":"wrap_scope"
+	},
+	"filesApi" : {
+		"rootUrl" : "root_url"
+	},
+	"fileFormat" : "json"
+}
