@@ -57,8 +57,12 @@
 *
 *Execute manually by opening a command prompt at the installation root directory:
 *
-*'		node al-file-upload.js [filepath]
-*'		ex. node al-file-upload.js
+*		>node al-file-upload.js [filepath]
+*	
+*Examples:
+*
+*		>node al-file-upload.js c:\temp\input.txt
+*		>node al-file-upload.js 'c:\input files\input file.json'
 */
 'use strict';
 

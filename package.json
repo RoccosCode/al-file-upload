@@ -23,6 +23,7 @@
   "homepage": "https://github.com/manalotoj/al-file-system-watcher#readme",
   "dependencies": {
     "al-files-service": "^1.0.0",
+    "jsdoc-to-markdown": "^1.2.0",
     "oauth-wrap": "^1.0.4",
     "promise": "^7.0.4",
     "winston": "^1.0.1"
