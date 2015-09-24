@@ -11,15 +11,10 @@
 *### Installing directly from github:
 *
 *Clone or download as zip to local machine. For the later, unzip to desired location.
-*In a command prompt at the root installation directory, execute *npm install* to install the following
-*module dependencies:
+*In a command prompt at the root installation directory, execute the following command
+* to install all module dependencies:
 *
-*Module              | Description
-*--------------------|-------------------------------------------------------------------
-* winston | Logging
-* promise | JavaScript promise
-* oath-wrap | Request OAuth WRAP security tokens from an STS
-* al-files-service | AwardLetter Files REST API
+*		>npm install
 *
 *### Configuration:
 *
