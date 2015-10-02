@@ -1,6 +1,6 @@
 {
   "name": "al-file-upload",
-  "version": "1.0.0",
+  "version": "1.0.11",
   "description": "Command to upload a file to AwardLetter",
   "main": "al-file-upload.js",
   "scripts": {
@@ -22,9 +22,11 @@
   },
   "homepage": "https://github.com/manalotoj/al-file-system-watcher#readme",
   "dependencies": {
-    "al-files-service": "^1.0.0",
+    "JSONStream": "^1.0.6",
+    "al-files-service": "^1.0.10",
     "jsdoc-to-markdown": "^1.2.0",
     "oauth-wrap": "^1.0.4",
+    "optimist": "^0.6.1",
     "promise": "^7.0.4",
     "winston": "^1.0.1"
   },

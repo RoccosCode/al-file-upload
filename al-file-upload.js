@@ -106,17 +106,9 @@ function upload() {
 	}
 
 	// read contents of [file] path
-	readFile(path)
+	readFile(path, {encoding: 'utf8'})
 		.then(function(content) {
-			var contentObject = content;
-			if (config.fileFormat === 'json') {
-				try {
-					// parse text as JSON
-					contentObject = JSON.parse(content);
-				} catch(e) { 
-					logger.error('invalid json file detected: ', e.stack);
-				}
-			}
+			//logger.debug(content);
 			var oauthRequest = config.oauthWrapRequest;
 			// retrieve authorization
 			oauth.getAuthHeader(oauthRequest.url,
@@ -127,7 +119,7 @@ function upload() {
 					logger.debug('authorization: ', authorization);
 
 					// upload contents using AwardLetter Files API
-					filesService.upload(config.filesApi.rootUrl, authorization, contentObject)
+					filesService.upload(config.filesApi.rootUrl, authorization, content)
                         .then(function(result) { 
                         	// results can be written to file, database, or 
                             logger.info('upload succeeded: ', result);
